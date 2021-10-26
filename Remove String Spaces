@@ -1,0 +1,11 @@
+function noSpace(x){
+  strWithoutSpaces = x.replace(/\s+/g, '');
+  return strWithoutSpaces;
+}
+
+// ANOTHER QUICKER SOLUTION, BUT WHICH DOESN'T TAKE \n \t, ONLY THE \s
+
+function noSpace(x){
+  strWithoutSpaces = x.split(' ').join('');
+  return strWithoutSpaces;
+}
