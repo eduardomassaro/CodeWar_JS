@@ -1,0 +1,34 @@
+function iqTest(numbers) {
+
+  let recebeNumSplit = [];
+  let numerosPares = [];
+  let numerosImpares = [];
+  
+  recebeNumSplit = numbers.split(" ");
+  
+  for (var i = 0; i < recebeNumSplit.length; i++){
+    
+    if (recebeNumSplit[i] % 2 == 0){
+      numerosPares.push(i)
+    } else {
+        numerosImpares.push(i);
+    }
+  }
+    
+  if (numerosPares.length > 1){
+    return numerosImpares[0] + 1;
+  } else {
+      return numerosPares[0] + 1;
+    }
+}
+
+
+// SAMPLE TESTS
+
+//  describe("Tests", () => {
+//    it("test", () => {
+//  Test.assertEquals(iqTest("2 4 7 8 10"),3);
+//  Test.assertEquals(iqTest("1 2 2"), 1);
+//
+//    });
+//  });
